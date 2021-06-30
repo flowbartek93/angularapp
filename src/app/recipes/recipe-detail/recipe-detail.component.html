@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img
+      src="{{ selectedRecipeDetails.imagePath }}"
+      alt="{{ selectedRecipeDetails.name }}"
+      class="img-responsive"
+      style="max-height: 500px"
+    />
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>{{ selectedRecipeDetails.name }}</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle">
+          manage recipe
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="">Add Ingridients</a></li>
+          <li><a href="">Edit</a></li>
+          <li><a href="">Delete</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      {{ selectedRecipeDetails.description }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">Ingridients</div>
+  </div>
+</div>
